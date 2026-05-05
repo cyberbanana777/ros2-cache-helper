@@ -1,0 +1,15 @@
+Package: ros2-cache-helper
+Version: 1.0.0
+Section: utils
+Priority: optional
+Architecture: all
+Depends: bash (>= 4.0), coreutils (>= 8.0), util-linux (>= 2.0), diffutils, help2man
+Maintainer: cyberbanana777 <sashagrachev2005@gmail.com>
+Homepage: https://github.com/cyberbanana777/ros2-cache-helper
+Description: Fast environment caching for ROS 2 workspaces
+ This package provides a script that caches the combined environment
+ of multiple ROS 2 workspaces (setup.bash / local_setup.bash) to speed up
+ terminal startup on resource-constrained devices like Jetson Nano.
+ .
+ After installation, add 'source /usr/bin/fast-ros2-env <list_of_setups>'
+ to your .bashrc. Use 'source /usr/bin/fast-ros2-env --clean' to clear cache.

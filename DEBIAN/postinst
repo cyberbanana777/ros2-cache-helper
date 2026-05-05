@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+
+echo "========================================"
+echo "ROS2 Cache Helper installed successfully."
+echo "To use it, add the following line to your ~/.bashrc:"
+echo ""
+echo "source /usr/bin/fast-ros2-env /path/to/setup1.bash /path/to/setup2.bash ..."
+echo ""
+echo "For more info, see /usr/share/doc/ros2-cache-helper/README.md"
+echo "========================================"

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Обёртка для быстрого кэширования ROS2 окружения
+# Передаёт все аргументы основному скрипту
+
+source /usr/local/lib/ros2-cache-helper/fast_ros2_env.sh "$@"

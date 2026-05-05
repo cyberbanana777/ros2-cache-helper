@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+if [ "$1" = "remove" ]; then
+    rm -rf /home/*/.cache/ros2_multi_cache 2>/dev/null || true
+    echo "ROS2 Cache Helper removed. Cache files deleted."
+fi
