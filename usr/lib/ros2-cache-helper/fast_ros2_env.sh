@@ -8,12 +8,11 @@
 #   source fast_ros2_env.sh --version
 # ============================================================
 
-set -euo pipefail
 
 # ----------------------------------------------------------------------
 # Конфигурация
 _ROS2_CACHE_DIR="$HOME/.cache/ros2_multi_cache"
-_VERSION="1.0.0"
+_VERSION="1.0.1"
 _COPYRIGHT="Copyright (c) 2026 Alice Zenina and Alexander Grachev RTU MIREA (Russia). License: MIT"
 
 # ----------------------------------------------------------------------
@@ -36,8 +35,8 @@ Arguments:
                  (order matters: they will be sourced in the given order)
 
 Examples:
-  source fast_ros2_env.sh /opt/ros/humble/setup.bash ~/ws/install/setup.bash
-  source fast_ros2_env.sh --clean
+  source fast-ros2-env /opt/ros/humble/setup.bash ~/ws/install/setup.bash
+  source fast-ros2-env --clean
 
 Report bugs to: <sashagrachev2005@gmail.com>
 EOF
@@ -148,6 +147,7 @@ fi
 if [[ $_needs_build -eq 1 ]]; then
     _ros2_build_cache "$_cache_file"
 fi
+
 
 # Загружаем кэш
 source "$_cache_file"
